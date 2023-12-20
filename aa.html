@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Albert Einstein</title>
+</head>
+<body>
+
+    <header>
+        <h1>Albert Einstein</h1>
+    </header>
+    
+  
+
+    <nav>
+        <ul>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="contribuiçoes.html">Contribuições</a></li>
+            <li><a href="legado.html">Legado</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="historia">
+            <h2>História de Albert Einstein</h2>
+             <p>Albert Einstein foi um físico teórico alemão nascido em 14 de março de 1879...</p>
+            
+        </section>
+
+        <section id="contribuicoes">
+            <h2>Contribuições Científicas</h2>
+            <p>A sua maior contribuição a Teoria da relatividade...</p>
+            
+        </section>
+
+        <section id="legado">
+            <h2>Legado de Einstein</h2>
+            <p>O legado de Einstein estende-se para além da física...</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>A história de Alber Einstein.</p>
+    </footer>
+
+</body>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+    
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+ @media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    margin: 10px;
+}
+
+
+section {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    margin: 10px;
+}
+
+
+
+/* Adicionando bordas e sombras */
+section {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 15px;
+}
+
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var body = document.querySelector('body');
+        var button = document.createElement('button');
+        button.textContent = 'Mudar Cor de Fundo';
+        button.onclick = function () {
+            body.style.backgroundColor = getRandomColor();
+        };
+        document.body.appendChild(button);
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    });
+</script>
+</html>
